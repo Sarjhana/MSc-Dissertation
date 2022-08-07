@@ -1,0 +1,4 @@
+,model_accuracy,f1,FOL_explanations,Processed_explanations,explanations_f1,explanations_complexity,explanation_fidelity
+0,[0.862599771949829],[0.9262320171411081],['feature0000000019 | ~feature0000000005 | ~feature0000000015'],"[
+(coagulation_NORMAL) or (NOT_gender_HIGH) or (NOT_respiration_LOW)
+]",[0.1749030722466695],[3],[0.18015963511972635]

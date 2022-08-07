@@ -1,0 +1,4 @@
+,model_accuracy,f1,explanations0,explanations0_f1,explanations0_fidelity,explanations0_complexity,explanations1,explanations1_f1,explanations1_fidelity,explanations1_complexity
+0,0.5984042286872860,0.39783851432329000,['~HeartRate_HIGH'],[0.4892709058442541],[0.896],[1],(CVP_HIGH & ~Haemoglobin_HIGH) | (~Haemoglobin_LOW & ~Haemoglobin_HIGH & ~ArterialBP_Diastolic_HIGH & ~ArterialBP_Mean_HIGH),0.22723221191740800,0.425531914893617,6
+1,[0.8293333053588867],[0.5202302894610586],['~Haemoglobin_HIGH'],[0.6040984272217861],[0.7893333333333333],[1],['(Haemoglobin_HIGH & ~Platelets_NORMAL & ~ArterialBP_Systolic_LOW) | (~Platelets_NORMAL & ~HeartRate_LOW & ~ArterialBP_Systolic_LOW & ~Temperature_LOW & ~CVP_LOW & ~CVP_HIGH & ~SpO2_NORMAL)'],[0.38490607073920013],[0.5866666666666667],[10]
+2,[0.8346666693687439],[0.47043549562682213],,,,,[None],[0],[0],[0]

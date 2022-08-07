@@ -1,0 +1,3 @@
+,explanations0,explanations1
+0,['NOT HeartRate_HIGH'],(CVP_HIGH and NOT Haemoglobin_HIGH) or (NOT Haemoglobin_LOW and NOT Haemoglobin_HIGH and NOT ArterialBP_Diastolic_HIGH and NOT ArterialBP_Mean_HIGH)
+1,['NOT Haemoglobin_HIGH'],['(Haemoglobin_HIGH and NOT Platelets_NORMAL and NOT ArterialBP_Systolic_LOW) or (NOT Platelets_NORMAL and NOT HeartRate_LOW and NOT ArterialBP_Systolic_LOW and NOT Temperature_LOW and NOT CVP_LOW and NOT CVP_HIGH and NOT SpO2_NORMAL)']

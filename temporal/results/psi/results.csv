@@ -1,0 +1,4 @@
+,model_accuracy,f1,FOL_explanations,Processed_explanations,explanations_f1,explanations_complexity,explanation_fidelity
+0,0.9388297872340425,0.9684499314128944,feature0000000022 | ~feature0000000016 | (feature0000000007 & ~feature0000000024) | (feature0000000024 & ~feature0000000007),"
+(CVP_NORMAL) or (NOT_ArterialBP_Systolic_NORMAL) or (Haemoglobin_NORMAL and NOT_SpO2_LOW) or (SpO2_LOW and NOT_Haemoglobin_NORMAL)
+",0.08724300222937825,6,0.08776595744680851

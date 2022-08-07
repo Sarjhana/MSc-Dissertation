@@ -1,0 +1,4 @@
+,explanations0,explanations1
+0,Mitoses_VLOW and NOT Clump_Thickness_VHIGH and NOT Marginal_Adhesion_HIGH and NOT Bare_Nuclei_NORMAL and NOT Bare_Nuclei_VHIGH,Cell_Size_Uniformity_VHIGH or Normal_Nucleoli_VHIGH or NOT Bare_Nuclei_VLOW
+1,['NOT Cell_Size_Uniformity_VHIGH and NOT Bare_Nuclei_VHIGH and NOT Normal_Nucleoli_LOW'],['NOT Bare_Nuclei_VLOW and NOT Bland_Chromatin_VLOW']
+2,['Clump_Thickness_VLOW or (Single_Epi_Cell_Size_VLOW and NOT Normal_Nucleoli_LOW)'],['Bland_Chromatin_VHIGH or Normal_Nucleoli_VHIGH or NOT Mitoses_VLOW or (Normal_Nucleoli_NORMAL and NOT Clump_Thickness_NORMAL)']

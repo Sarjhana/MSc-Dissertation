@@ -1,0 +1,4 @@
+,explanations0,explanations1
+0,(gender_LOW and cardiovascular_NORMAL and NOT comorbidity_HIGH) or (liver_NORMAL and NOT sofa_NORMAL and NOT cns_HIGH),cns_HIGH or (respiration_HIGH and liver_HIGH) or (coagulation_HIGH and renal_NORMAL) or (sofa_NORMAL and liver_NORMAL and NOT coagulation_NORMAL) or (sofa_NORMAL and liver_NORMAL and renal_HIGH and NOT cardiovascular_NORMAL) or (sofa_NORMAL and renal_HIGH and NOT comorbidity_HIGH and NOT liver_HIGH)
+1,['(los_NORMAL and NOT renal_HIGH) or (cardiovascular_NORMAL and NOT coagulation_HIGH) or (respiration_HIGH and liver_NORMAL and NOT comorbidity_HIGH and NOT coagulation_NORMAL and NOT coagulation_HIGH)'],['(comorbidity_LOW and sofa_NORMAL and coagulation_NORMAL) or (comorbidity_LOW and sofa_NORMAL and renal_HIGH) or (sofa_NORMAL and liver_NORMAL and NOT coagulation_HIGH) or (sofa_NORMAL and coagulation_NORMAL and renal_HIGH and NOT comorbidity_HIGH)']
+2,['comorbidity_LOW and NOT renal_NORMAL'],['sofa_HIGH']

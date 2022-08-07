@@ -1,0 +1,7 @@
+,model_accuracy,f1,FOL_explanations,Processed_explanations,explanations_f1,explanations_complexity,explanation_fidelity
+0,0.6351931330472103,0.7769028871391076,(feature0000000009 & feature0000000044) | (feature0000000009 & ~feature0000000039) | (feature0000000019 & ~feature0000000031) | (feature0000000044 & ~feature0000000004) | (~feature0000000004 & ~feature0000000039) | (~feature0000000007 & ~feature0000000039),"
+(Cell_Size_Uniformity_VHIGH and Mitoses_VHIGH) or (Cell_Size_Uniformity_VHIGH and NOT_Normal_Nucleoli_VHIGH) or (Marginal_Adhesion_VHIGH and NOT_Bland_Chromatin_LOW) or (Mitoses_VHIGH and NOT_Clump_Thickness_VHIGH) or (NOT_Clump_Thickness_VHIGH and NOT_Normal_Nucleoli_VHIGH) or (NOT_Cell_Size_Uniformity_NORMAL and NOT_Normal_Nucleoli_VHIGH)
+",0.22073578595317722,12,0.2832618025751073
+1,[0.6738197424892703],[0.805128205128205],['feature0000000019 | ~feature0000000025'],"[
+(Marginal_Adhesion_VHIGH) or (NOT_Bare_Nuclei_VLOW)
+]",[0.9255353147970597],[2],[0.9313304721030042]
