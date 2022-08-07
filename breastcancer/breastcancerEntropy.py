@@ -24,6 +24,8 @@ from preprocessing import load_data
 x, y, datay, concept_names = load_data(onehot=True)
 
 # instantiating dataset in Tensor format and initialising variables
+# Code referred from https://github.com/pietrobarbiero/pytorch_explain/blob/master/experiments/elens/mimic.py
+# **** Start of reference code from source mentioned above **** 
 dataset = TensorDataset(x, y)
 train_size = int(len(dataset) * 0.5)
 val_size = (len(dataset) - train_size) // 2
@@ -41,7 +43,6 @@ base_dir = f'./checkpoints'
 os.makedirs(base_dir, exist_ok=True)
 
 # Stratified K-fold cross validation (Code style inspired from https://github.com/pietrobarbiero/pytorch_explain/blob/master/experiments/elens/mimic.py)
-# **** Start of reference code from source mentioned above **** 
 n_splits = 3
 skf = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
 results_list = []
@@ -81,6 +82,7 @@ for split, (trainval_index, test_index) in enumerate(skf.split(x.cpu().detach().
     test_loader = DataLoader(test_data, batch_size=test_size)
 
     # Instantiating Trainer, Model (Entropy explainer) and checkpoint
+    # Followed Pietro’s method of training and instantiating the model - https://github.com/pietrobarbiero/pytorch_explain/blob/master/ experiments/elens/mimic.py
     checkpoint_callback = ModelCheckpoint(dirpath=base_dir, monitor='val_loss', save_top_k=1)
     trainer = Trainer(max_epochs=200, gpus=0, auto_lr_find=True, deterministic=True,
                       check_val_every_n_epoch=1, default_root_dir=base_dir,
